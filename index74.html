@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Canteen Name -->
+     <header class="abc">
+        <h1>Maharaja Restaurant</h1>
+        <nav class="ram">
+            <ul>
+                <button><a href="#index">Home</a></button>
+                 <button><a href="menu.html">Menu</a></button>
+                 <button><a href="contact.html">Contact Us</a></button>
+                 <button><a  href="reviews.html">Reviews</a></button>
+            </ul>
+        </nav>
+    </header>
+    
+    
+  <script>
+      let next = document.querySelector('.next');
+      let prev = document.querySelector('.prev');
+
+      next.addEventListener('click', function () {
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').appendChild(items[0]);
+      });
+
+      prev.addEventListener('click', function () {
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').prepend(items[items.length - 1]); // here the length of items = 6
+      });
+
+    </script>
+</body>
+</html>

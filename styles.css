@@ -1,0 +1,75 @@
+nav ul {
+    list-style: none;
+    padding-right: 10px;
+    background: none;
+    margin-top: 100px;
+    
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+    font-size:20px;
+    padding: 30px;
+    color: white;
+       
+}
+
+nav ul li a {
+    text-decoration: none;
+    bcolor: red;
+    padding: 30px;
+    
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+nav button{
+position:relative;
+font-size:10;
+   padding:20px;
+margin-top:20px;
+   width :18%;
+   background-color:#223RR;
+   border-radius:15px;
+}
+
+
+button{
+font-size:30px;
+
+}
+ 
+.ram{
+font-size:10;
+margin:150px;
+
+}
+
+
+/* Header styling */
+ header {
+	font-family: 'Roboto Slab', serif;
+        text-align: center;
+        background-color: #5cba47;
+        background-image:url('https://assets.architecturaldigest.in/photos/64f85037ec0bc118bdd98aba/16:9/w_1600,c_limit/Untitled%20design%20(14).png');	
+        background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	padding: 250px ;
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        top: 0;
+        width: 80%; 
+        z-index: 1000; /* Keeps header on top */
+      }
+
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+<style>
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+.abc{
+ text-align: center;
+ background-image:url('https://assets.architecturaldigest.in/photos/64f85037ec0bc118bdd98aba/16:9/w_1600,c_limit/Untitled%20design%20(14).png');
+  color: white;
+padding:2px;
+}
+
+.contact-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contact-info {
+  margin-bottom: 2em;
+}
+
+.contact-info p {
+  margin-bottom: 0.5em;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: calc(100% - 12px);
+  padding: 10px;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    width: 95%;
+    padding: 1em;
+  }
+}
+
+
+
+
+</style>
+
+ </head>
+<body>
+
+  <header class="abc">
+        <h1>Maharaja Restaurant</h1>
+        <nav>
+            <ul>
+                <button><a href="index74.html">Home</a></button>
+                <button><a href="menu.html">Menu</a></button>
+                <button><a href="contact.html">Contact Us</a></button>
+                <button><a href="reviews.html">Reviews</a></button>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us with any questions or inquiries.</p>
+
+    <div class="contact-info">
+      <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+      <p><strong>Phone:</strong> +1 555 123 4567</p>
+      <p><strong>Email:</strong> info@example.com</p>
+    </div>
+
+
+
+
+    <form class="contact-form" action="connect.php" method="post" >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="Phone">Mobile no.:</label>
+      <input type="number" id="number" name="number" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    
+    
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+ <style>
+ *{
+    
+    padding: 50;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eaeaea;
+    overflow: hidden;
+}
+
+.abc{
+ text-align: center;
+ background-image:url('https://assets.architecturaldigest.in/photos/64f85037ec0bc118bdd98aba/16:9/w_1600,c_limit/Untitled%20design%20(14).png');
+  color: white;
+padding:2px;
+}
+
+.container{
+    position: absolute;
+margin:30px;
+    top:350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+
+}
+
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide .item:nth-child(3){
+    left: 50%;
+    
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+   opacity: 900%; 
+}
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+     opacity: 70%;
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    left: calc(50% + 660px);
+    opacity: 0%;
+}
+
+
+
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+/* block before going to main page */
+.slide .item:nth-child(2) .content{
+    display: block;
+    
+}
+
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.content button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+     
+
+     }
+     }
+
+    <link rel="stylesheet" href="styles.css">
+
+    
+ </style>
+        
+    </head>
+    <body>
+     
+  <header class="abc">
+        <h1>Maharaja Restaurant</h1>
+        <nav>
+            <ul>
+                <button><a href="index74.html">Home</a></button>
+                <button><a href="menu.html">Menu</a></button>
+                <button><a href="contact.html">Contact Us</a></button>
+                <button><a href="reviews.html">Reviews</a></button>
+            </ul>
+        </nav>
+    </header>
+   
+        <!--Font Awesome CDN-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+<div class="container">
+      <div class="slide">
+        <div
+          class="item"
+          style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dmVnJTIwcGl6emF8ZW58MHx8MHx8fDA%3D');"
+        >
+          <div class="content">
+            <div class="name">Veg Pizza</div>
+            <div class="des">A cheesy, delicious pizza with Veg toppings.</div>
+            <button>Order Now</button>
+          </div>
+        </div>
+
+        <div
+          class="item"
+          style="background-image: url('https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bm9udmVnJTIwcGl6emF8ZW58MHx8MHx8fDA%3D');"
+        >
+          <div class="content">
+            <div class="name">Non-veg <br> Pizza</div>
+            <div class="des">A cheesy, delicious pizza with Non-veg toppings.</div>
+            <button>Order Now</button>
+          </div>
+        </div>
+
+        <div
+          class="item"
+          style="background-image: url('https://media.istockphoto.com/id/1309352410/photo/cheeseburger-with-tomato-and-lettuce-on-wooden-board.jpg?s=612x612&w=0&k=20&c=lfsA0dHDMQdam2M1yvva0_RXfjAyp4gyLtx4YUJmXgg=');"
+        >
+          <div class="content">
+            <div class="name">Veg <br>Burger</div>
+            <div class="des">A tasty Veg burger with crispy fries.</div>
+            <button>Order Now</button>
+          </div>
+        </div>
+
+        <div
+          class="item"
+          style="background-image: url('https://images.unsplash.com/photo-1521305916504-4a1121188589?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bm9uJTIwdmVnJTIwYnVyZ2VyfGVufDB8fDB8fHww');"
+        >
+          <div class="content">
+            <div class="name">Non-Veg <br>Burger</div>
+            <div class="des">A spicy chicken burger with crispy fries.</div>
+            <button>Order Now</button>
+          </div>
+        </div>
+
+        <div
+          class="item"
+          style="background-image: url('https://media.istockphoto.com/id/482964545/photo/arrabiata-pasta.webp?a=1&b=1&s=612x612&w=0&k=20&c=WgBDLDed6qro4H1gamjxl5hWALBdXm6T0UGSU3d6TRo=');"
+        >
+          <div class="content">
+            <div class="name">Pasta</div>
+            <div class="des">Delicious pasta with creamy Alfredo sauce.</div>
+            <button>Order Now</button>
+          </div>
+        </div>
+
+        <div
+          class="item"
+          style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FsYWR8ZW58MHx8MHx8fDA%3D');"
+        >
+          <div class="content">
+            <div class="name">Salad</div>
+            <div class="des">A healthy green salad with vinaigrette.</div>
+            <button>Order Now</button>
+          </div>
+        </div>
+
+        <div
+          class="item"
+          style="background-image: url('https://media.istockphoto.com/id/1130992735/photo/organic-fruit-smoothies.webp?a=1&b=1&s=612x612&w=0&k=20&c=UJcuk9SGheHCcRHdk6QtGxId_4oGsfIzrTZa0Jp5S18=');"
+        >
+          <div class="content">
+            <div class="name">Smoothie</div>
+            <div class="des">A refreshing fruit smoothie with yogurt.</div>
+            <button>Order Now</button>
+          </div>
+        </div>
+
+        <div
+          class="item"
+          style="background-image: url('https://media.istockphoto.com/id/1328164559/photo/veg-grilled-sandwich.webp?a=1&b=1&s=612x612&w=0&k=20&c=IBfcvfvBp6KnM0eOmhvDCOJVeRjx7tXgXQ8VYFWxou0=');"
+        >
+          <div class="content">
+            <div class="name">Sandwich</div>
+            <div class="des">A club sandwich with fresh veggies and cheese.</div>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="button">
+        <button class="prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+
+ 
+<script>
+let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+})
+    
+</script>
+    </body>
+</html>
